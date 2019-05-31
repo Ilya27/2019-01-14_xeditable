@@ -1,0 +1,16 @@
+[data-editable]{
+  text-decoration: none;
+  color: #428bca;
+  border-bottom: dashed 1px #428bca;
+  cursor: pointer;
+}
+
+[data-editable]:hover{
+  text-decoration: none;
+}
+
+[data-editable]:empty::before{
+  content: 'empty';
+  font-style: italic;
+  color: #DD1144;
+}
